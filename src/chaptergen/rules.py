@@ -87,8 +87,9 @@ def repair_chapters(chapters: list[Chapter], duration: float) -> tuple[list[Chap
         seen.add(key)
 
     if len(merged) < MIN_CHAPTERS:
+        hint = " (normal for short videos: chapters are for videos of a few minutes or more)" if duration < 180 else ""
         report.warnings.append(
-            f"only {len(merged)} chapter(s); YouTube needs at least {MIN_CHAPTERS} to show chapters"
+            f"only {len(merged)} chapter(s); YouTube needs at least {MIN_CHAPTERS} to show chapters{hint}"
         )
     return merged, report
 

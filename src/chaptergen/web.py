@@ -32,7 +32,7 @@ PAGE = """<!doctype html>
   * { box-sizing:border-box } body { margin:0; font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink) }
   main { max-width:760px; margin:0 auto; padding:40px 16px 64px }
   h1 { font-size:28px; margin:0 0 4px } .sub { color:var(--muted); margin:0 0 24px }
-  #drop { border:2px dashed var(--line); border-radius:14px; background:var(--card); padding:40px 16px; text-align:center; cursor:pointer }
+  #drop { display:block; border:2px dashed var(--line); border-radius:14px; background:var(--card); padding:40px 16px; text-align:center; cursor:pointer }
   #drop.over { border-color:var(--accent) } #drop strong { display:block; font-size:18px }
   #drop span { color:var(--muted); font-size:14px }
   #status { margin:16px 0; color:var(--muted); min-height:24px }
