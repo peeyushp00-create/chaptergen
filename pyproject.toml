@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chaptergen"
+version = "0.1.0"
+description = "Turn videos and podcasts into YouTube chapters, a summary, title ideas and Shorts/Reels clip ideas with Gemini."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Peeyush" }]
+requires-python = ">=3.10"
+dependencies = ["google-genai>=2.0"]
+keywords = ["youtube", "chapters", "timestamps", "podcast", "show notes", "gemini", "ai", "llm", "transcription", "shorts", "reels", "creators"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/peeyushp00-create/chaptergen"
+Issues = "https://github.com/peeyushp00-create/chaptergen/issues"
+
+[project.scripts]
+chaptergen = "chaptergen.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+chaptergen = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# The web page's HTML/CSS/JS is kept as one readable template string.
+"src/chaptergen/web.py" = ["E501"]

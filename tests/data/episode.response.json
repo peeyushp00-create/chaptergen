@@ -1,0 +1,24 @@
+{
+  "_note": "Hand-written example of a Gemini response for tests. Deliberately imperfect: first chapter at 0:03, a chapter only 5s after another, a time not in the transcript, and a clip past the end.",
+  "chapters": [
+    {"start": "00:03", "title": "Intro"},
+    {"start": "00:52", "title": "Why most reels die in 3 seconds"},
+    {"start": "00:57", "title": "The first-frame mistake"},
+    {"start": "02:12", "title": "The Problem, Proof, Promise hook formula"},
+    {"start": "03:20", "title": "Three real examples: what worked and what flopped"},
+    {"start": "05:08", "title": "Editing for retention: a change every 2 seconds"},
+    {"start": "07:11", "title": "Does posting time matter?"},
+    {"start": "08:47", "title": "Q&A: trending audio, length, hashtags, consistency"}
+  ],
+  "summary": "A data-backed breakdown of why short-form videos lose viewers in the first seconds, the three-part hook formula that doubled the creator's views, and the editing and posting habits that keep people watching.",
+  "titles": [
+    "The 3-Second Rule That Doubled My Reel Views",
+    "Why Your Reels Get 200 Views (And the Fix)",
+    "I Tested 400 Reels: Here's What Actually Works"
+  ],
+  "clips": [
+    {"start": "04:06", "end": "04:35", "hook": "Same content, same edit, only the first sentence was different.", "reason": "clear before/after with numbers"},
+    {"start": "04:36", "end": "04:54", "hook": "Nobody scrolls past a question they can't answer.", "reason": "quotable one-liner"},
+    {"start": "10:10", "end": "11:30", "hook": "See you in the next one.", "reason": "outro"}
+  ]
+}
